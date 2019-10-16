@@ -26,13 +26,12 @@
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( 777.501, 80.4598 )
-scale = Vector2( 0.5, 0.5 )
 __meta__ = {
 "_edit_horizontal_guides_": [ -487.621 ]
 }
 
 [node name="florence" type="Sprite" parent="."]
-position = Vector2( -702.57, 423.683 )
+position = Vector2( -701.656, 420.325 )
 texture = ExtResource( 1 )
 script = ExtResource( 2 )
 
@@ -47,8 +46,9 @@ position = Vector2( -969.184, 434.139 )
 texture = ExtResource( 5 )
 
 [node name="hungary" type="Sprite" parent="."]
-position = Vector2( -119.308, 175.102 )
+position = Vector2( -114.499, 429.472 )
 texture = ExtResource( 6 )
+offset = Vector2( -4.80933, -254.37 )
 
 [node name="lucca" type="Sprite" parent="."]
 position = Vector2( -792.841, 341.478 )
@@ -63,7 +63,7 @@ position = Vector2( -850.886, 94.6624 )
 texture = ExtResource( 9 )
 
 [node name="modena-ferrara" type="Sprite" parent="."]
-position = Vector2( -668.373, 244.737 )
+position = Vector2( -663.486, 239.85 )
 texture = ExtResource( 10 )
 
 [node name="montferrat" type="Sprite" parent="."]
@@ -87,7 +87,7 @@ position = Vector2( -31.838, 640.904 )
 texture = ExtResource( 15 )
 
 [node name="saluzzo" type="Sprite" parent="."]
-position = Vector2( -1119.35, 162.801 )
+position = Vector2( -1110.72, 169.996 )
 texture = ExtResource( 16 )
 
 [node name="sardinia" type="Sprite" parent="."]
@@ -117,3 +117,11 @@ texture = ExtResource( 22 )
 [node name="austria" type="Sprite" parent="."]
 position = Vector2( -364.799, 79.8443 )
 texture = ExtResource( 23 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( -568.387, 295.22 )
+scale = Vector2( 3.99417, 1.01104 )
+current = true
+drag_margin_h_enabled = false
+offset_v = -1.0
+offset_h = -1.0

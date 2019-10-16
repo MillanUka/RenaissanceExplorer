@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Resources/map/florence.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/map/florence.gd" type="Script" id=2]
@@ -24,6 +24,8 @@
 [ext_resource path="res://Resources/map/venice.png" type="Texture" id=22]
 [ext_resource path="res://Resources/map/austria.png" type="Texture" id=23]
 
+[sub_resource type="Theme" id=1]
+
 [node name="Node2D" type="Node2D"]
 __meta__ = {
 "_edit_horizontal_guides_": [ -487.621 ]
@@ -46,10 +48,15 @@ texture = ExtResource( 1 )
 script = ExtResource( 2 )
 
 [node name="Button" type="Button" parent="florence"]
-margin_left = -72.5283
-margin_top = -36.3836
-margin_right = 53.4717
-margin_bottom = 6.61638
+margin_left = -44.0779
+margin_top = -30.6732
+margin_right = 22.9221
+margin_bottom = -10.6732
+theme = SubResource( 1 )
+custom_colors/font_color_disabled = Color( 0.376471, 0.376471, 0.376471, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
 text = "Florence"
 
 [node name="france" type="Sprite" parent="."]
@@ -58,9 +65,23 @@ position = Vector2( -482.424, -219.042 )
 texture = ExtResource( 3 )
 script = ExtResource( 4 )
 
+[node name="Button" type="Button" parent="france"]
+margin_left = -86.4706
+margin_top = -57.8201
+margin_right = -32.4706
+margin_bottom = -37.8201
+text = "France"
+
 [node name="genoa" type="Sprite" parent="."]
 position = Vector2( -370.008, 53.3295 )
 texture = ExtResource( 5 )
+
+[node name="Button" type="Button" parent="genoa"]
+margin_left = -10.9826
+margin_top = -203.604
+margin_right = 43.0174
+margin_bottom = -183.604
+text = "Genoa"
 
 [node name="hungary" type="Sprite" parent="."]
 position = Vector2( 484.677, 48.6625 )
@@ -91,6 +112,13 @@ texture = ExtResource( 11 )
 position = Vector2( 341.451, 571.11 )
 texture = ExtResource( 12 )
 
+[node name="Button" type="Button" parent="naples"]
+margin_left = -149.411
+margin_top = -192.558
+margin_right = -95.4113
+margin_bottom = -172.558
+text = "Naples"
+
 [node name="ottoman" type="Sprite" parent="."]
 position = Vector2( 545.607, 98.9745 )
 texture = ExtResource( 13 )
@@ -112,7 +140,7 @@ position = Vector2( -471.524, 521.346 )
 texture = ExtResource( 17 )
 
 [node name="savoy" type="Sprite" parent="."]
-position = Vector2( -377.987, -250.76 )
+position = Vector2( -375.292, -254.975 )
 texture = ExtResource( 18 )
 
 [node name="sicily" type="Sprite" parent="."]

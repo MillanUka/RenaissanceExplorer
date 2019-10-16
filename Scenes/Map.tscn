@@ -25,103 +25,112 @@
 [ext_resource path="res://Resources/map/austria.png" type="Texture" id=23]
 
 [node name="Node2D" type="Node2D"]
-position = Vector2( 777.501, 80.4598 )
 __meta__ = {
 "_edit_horizontal_guides_": [ -487.621 ]
 }
 
-[node name="florence" type="Sprite" parent="."]
-position = Vector2( -701.656, 420.325 )
-texture = ExtResource( 1 )
-script = ExtResource( 2 )
-
-[node name="france" type="Sprite" parent="."]
-pause_mode = 2
-position = Vector2( -1081.6, 161.767 )
-texture = ExtResource( 3 )
-script = ExtResource( 4 )
-
-[node name="genoa" type="Sprite" parent="."]
-position = Vector2( -969.184, 434.139 )
-texture = ExtResource( 5 )
-
-[node name="hungary" type="Sprite" parent="."]
-position = Vector2( -114.499, 429.472 )
-texture = ExtResource( 6 )
-offset = Vector2( -4.80933, -254.37 )
-
-[node name="lucca" type="Sprite" parent="."]
-position = Vector2( -792.841, 341.478 )
-texture = ExtResource( 7 )
-
-[node name="manuta" type="Sprite" parent="."]
-position = Vector2( -696.999, 141.115 )
-texture = ExtResource( 8 )
-
-[node name="milan" type="Sprite" parent="."]
-position = Vector2( -850.886, 94.6624 )
-texture = ExtResource( 9 )
-
-[node name="modena-ferrara" type="Sprite" parent="."]
-position = Vector2( -663.486, 239.85 )
-texture = ExtResource( 10 )
-
-[node name="montferrat" type="Sprite" parent="."]
-position = Vector2( -994.553, 145.604 )
-texture = ExtResource( 11 )
-
-[node name="naples" type="Sprite" parent="."]
-position = Vector2( -257.725, 951.92 )
-texture = ExtResource( 12 )
-
-[node name="ottoman" type="Sprite" parent="."]
-position = Vector2( -53.5691, 479.784 )
-texture = ExtResource( 13 )
-
-[node name="papalstates" type="Sprite" parent="."]
-position = Vector2( -545.292, 538.383 )
-texture = ExtResource( 14 )
-
-[node name="ragusa" type="Sprite" parent="."]
-position = Vector2( -31.838, 640.904 )
-texture = ExtResource( 15 )
-
-[node name="saluzzo" type="Sprite" parent="."]
-position = Vector2( -1110.72, 169.996 )
-texture = ExtResource( 16 )
-
-[node name="sardinia" type="Sprite" parent="."]
-position = Vector2( -1070.7, 902.156 )
-texture = ExtResource( 17 )
-
-[node name="savoy" type="Sprite" parent="."]
-position = Vector2( -977.163, 130.049 )
-texture = ExtResource( 18 )
-
-[node name="sicily" type="Sprite" parent="."]
-position = Vector2( -562.542, 1433.27 )
-texture = ExtResource( 19 )
-
-[node name="siena" type="Sprite" parent="."]
-position = Vector2( -718.01, 527.175 )
-texture = ExtResource( 20 )
-
-[node name="trent" type="Sprite" parent="."]
-position = Vector2( -643.618, -11.7874 )
-texture = ExtResource( 21 )
-
-[node name="venice" type="Sprite" parent="."]
-position = Vector2( -425.681, 282.049 )
-texture = ExtResource( 22 )
-
-[node name="austria" type="Sprite" parent="."]
-position = Vector2( -364.799, 79.8443 )
-texture = ExtResource( 23 )
-
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( -568.387, 295.22 )
 scale = Vector2( 3.99417, 1.01104 )
 current = true
 drag_margin_h_enabled = false
 offset_v = -1.0
 offset_h = -1.0
+drag_margin_left = 0.0
+drag_margin_top = 0.0
+drag_margin_right = 0.0
+drag_margin_bottom = 0.0
+
+[node name="florence" type="Sprite" parent="."]
+position = Vector2( -99.8818, 42.0081 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Button" type="Button" parent="florence"]
+margin_left = -72.5283
+margin_top = -36.3836
+margin_right = 53.4717
+margin_bottom = 6.61638
+text = "Florence"
+
+[node name="france" type="Sprite" parent="."]
+pause_mode = 2
+position = Vector2( -482.424, -219.042 )
+texture = ExtResource( 3 )
+script = ExtResource( 4 )
+
+[node name="genoa" type="Sprite" parent="."]
+position = Vector2( -370.008, 53.3295 )
+texture = ExtResource( 5 )
+
+[node name="hungary" type="Sprite" parent="."]
+position = Vector2( 484.677, 48.6625 )
+texture = ExtResource( 6 )
+offset = Vector2( -4.80933, -254.37 )
+
+[node name="lucca" type="Sprite" parent="."]
+position = Vector2( -193.665, -39.3315 )
+texture = ExtResource( 7 )
+
+[node name="manuta" type="Sprite" parent="."]
+position = Vector2( -97.8232, -239.695 )
+texture = ExtResource( 8 )
+
+[node name="milan" type="Sprite" parent="."]
+position = Vector2( -251.71, -286.147 )
+texture = ExtResource( 9 )
+
+[node name="modena-ferrara" type="Sprite" parent="."]
+position = Vector2( -64.3103, -140.959 )
+texture = ExtResource( 10 )
+
+[node name="montferrat" type="Sprite" parent="."]
+position = Vector2( -395.377, -235.205 )
+texture = ExtResource( 11 )
+
+[node name="naples" type="Sprite" parent="."]
+position = Vector2( 341.451, 571.11 )
+texture = ExtResource( 12 )
+
+[node name="ottoman" type="Sprite" parent="."]
+position = Vector2( 545.607, 98.9745 )
+texture = ExtResource( 13 )
+
+[node name="papalstates" type="Sprite" parent="."]
+position = Vector2( 53.8838, 157.574 )
+texture = ExtResource( 14 )
+
+[node name="ragusa" type="Sprite" parent="."]
+position = Vector2( 567.338, 260.094 )
+texture = ExtResource( 15 )
+
+[node name="saluzzo" type="Sprite" parent="."]
+position = Vector2( -511.544, -210.813 )
+texture = ExtResource( 16 )
+
+[node name="sardinia" type="Sprite" parent="."]
+position = Vector2( -471.524, 521.346 )
+texture = ExtResource( 17 )
+
+[node name="savoy" type="Sprite" parent="."]
+position = Vector2( -377.987, -250.76 )
+texture = ExtResource( 18 )
+
+[node name="sicily" type="Sprite" parent="."]
+position = Vector2( 36.6338, 1052.46 )
+texture = ExtResource( 19 )
+
+[node name="siena" type="Sprite" parent="."]
+position = Vector2( -118.834, 146.365 )
+texture = ExtResource( 20 )
+
+[node name="trent" type="Sprite" parent="."]
+position = Vector2( -44.4421, -392.597 )
+texture = ExtResource( 21 )
+
+[node name="venice" type="Sprite" parent="."]
+position = Vector2( 173.495, -98.7605 )
+texture = ExtResource( 22 )
+
+[node name="austria" type="Sprite" parent="."]
+position = Vector2( 234.377, -300.965 )
+texture = ExtResource( 23 )

@@ -1,30 +1,42 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Resources/map/florence.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/map/florence.gd" type="Script" id=2]
-[ext_resource path="res://Resources/map/france.png" type="Texture" id=3]
-[ext_resource path="res://Scripts/map/france.gd" type="Script" id=4]
-[ext_resource path="res://Resources/map/genoa.png" type="Texture" id=5]
-[ext_resource path="res://Resources/map/hungary.png" type="Texture" id=6]
-[ext_resource path="res://Resources/map/lucca.png" type="Texture" id=7]
-[ext_resource path="res://Resources/map/manuta.png" type="Texture" id=8]
-[ext_resource path="res://Resources/map/milan.png" type="Texture" id=9]
-[ext_resource path="res://Resources/map/modena-ferrara.png" type="Texture" id=10]
-[ext_resource path="res://Resources/map/montferrat.png" type="Texture" id=11]
-[ext_resource path="res://Resources/map/naples.png" type="Texture" id=12]
-[ext_resource path="res://Resources/map/ottoman.png" type="Texture" id=13]
-[ext_resource path="res://Resources/map/papalstates.png" type="Texture" id=14]
-[ext_resource path="res://Resources/map/ragusa.png" type="Texture" id=15]
-[ext_resource path="res://Resources/map/saluzzo.png" type="Texture" id=16]
-[ext_resource path="res://Resources/map/sardinia.png" type="Texture" id=17]
-[ext_resource path="res://Resources/map/savoy.png" type="Texture" id=18]
-[ext_resource path="res://Resources/map/sicily.png" type="Texture" id=19]
-[ext_resource path="res://Resources/map/siena.png" type="Texture" id=20]
-[ext_resource path="res://Resources/map/trent.png" type="Texture" id=21]
-[ext_resource path="res://Resources/map/venice.png" type="Texture" id=22]
-[ext_resource path="res://Resources/map/austria.png" type="Texture" id=23]
+[ext_resource path="res://Resources/flags/florence2.png" type="Texture" id=3]
+[ext_resource path="res://Resources/map/france.png" type="Texture" id=4]
+[ext_resource path="res://Scripts/map/france.gd" type="Script" id=5]
+[ext_resource path="res://Resources/map/genoa.png" type="Texture" id=6]
+[ext_resource path="res://Scripts/map/genoa.gd" type="Script" id=7]
+[ext_resource path="res://Resources/map/hungary.png" type="Texture" id=8]
+[ext_resource path="res://Resources/map/lucca.png" type="Texture" id=9]
+[ext_resource path="res://Resources/map/manuta.png" type="Texture" id=10]
+[ext_resource path="res://Resources/map/milan.png" type="Texture" id=11]
+[ext_resource path="res://Resources/map/modena-ferrara.png" type="Texture" id=12]
+[ext_resource path="res://Resources/map/montferrat.png" type="Texture" id=13]
+[ext_resource path="res://Resources/map/naples.png" type="Texture" id=14]
+[ext_resource path="res://Resources/flags/naples2.png" type="Texture" id=15]
+[ext_resource path="res://Resources/map/ottoman.png" type="Texture" id=16]
+[ext_resource path="res://Resources/map/papalstates.png" type="Texture" id=17]
+[ext_resource path="res://Resources/map/ragusa.png" type="Texture" id=18]
+[ext_resource path="res://Resources/map/saluzzo.png" type="Texture" id=19]
+[ext_resource path="res://Resources/map/sardinia.png" type="Texture" id=20]
+[ext_resource path="res://Resources/map/savoy.png" type="Texture" id=21]
+[ext_resource path="res://Resources/map/sicily.png" type="Texture" id=22]
+[ext_resource path="res://Resources/map/siena.png" type="Texture" id=23]
+[ext_resource path="res://Resources/map/trent.png" type="Texture" id=24]
+[ext_resource path="res://Resources/map/venice.png" type="Texture" id=25]
+[ext_resource path="res://Resources/map/austria.png" type="Texture" id=26]
 
 [sub_resource type="Theme" id=1]
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="Theme" id=4]
+
+[sub_resource type="BitmapFont" id=5]
+height = 15.0
 
 [node name="Node2D" type="Node2D"]
 __meta__ = {
@@ -48,22 +60,23 @@ texture = ExtResource( 1 )
 script = ExtResource( 2 )
 
 [node name="Button" type="Button" parent="florence"]
-margin_left = -44.0779
-margin_top = -30.6732
-margin_right = 22.9221
-margin_bottom = -10.6732
+margin_left = -35.7513
+margin_top = -54.5578
+margin_right = 26.2487
+margin_bottom = 1.44215
 theme = SubResource( 1 )
-custom_colors/font_color_disabled = Color( 0.376471, 0.376471, 0.376471, 1 )
+custom_styles/normal = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
 custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
-text = "Florence"
+icon = ExtResource( 3 )
 
 [node name="france" type="Sprite" parent="."]
 pause_mode = 2
 position = Vector2( -482.424, -219.042 )
-texture = ExtResource( 3 )
-script = ExtResource( 4 )
+texture = ExtResource( 4 )
+script = ExtResource( 5 )
 
 [node name="Button" type="Button" parent="france"]
 margin_left = -86.4706
@@ -74,91 +87,119 @@ text = "France"
 
 [node name="genoa" type="Sprite" parent="."]
 position = Vector2( -370.008, 53.3295 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
+script = ExtResource( 7 )
 
 [node name="Button" type="Button" parent="genoa"]
 margin_left = -10.9826
 margin_top = -203.604
 margin_right = 43.0174
 margin_bottom = -183.604
+custom_styles/normal = SubResource( 3 )
 text = "Genoa"
 
 [node name="hungary" type="Sprite" parent="."]
 position = Vector2( 484.677, 48.6625 )
-texture = ExtResource( 6 )
+texture = ExtResource( 8 )
 offset = Vector2( -4.80933, -254.37 )
 
 [node name="lucca" type="Sprite" parent="."]
 position = Vector2( -193.665, -39.3315 )
-texture = ExtResource( 7 )
+texture = ExtResource( 9 )
 
 [node name="manuta" type="Sprite" parent="."]
 position = Vector2( -97.8232, -239.695 )
-texture = ExtResource( 8 )
+texture = ExtResource( 10 )
 
 [node name="milan" type="Sprite" parent="."]
 position = Vector2( -251.71, -286.147 )
-texture = ExtResource( 9 )
+texture = ExtResource( 11 )
 
 [node name="modena-ferrara" type="Sprite" parent="."]
 position = Vector2( -64.3103, -140.959 )
-texture = ExtResource( 10 )
+texture = ExtResource( 12 )
 
 [node name="montferrat" type="Sprite" parent="."]
 position = Vector2( -395.377, -235.205 )
-texture = ExtResource( 11 )
+texture = ExtResource( 13 )
 
 [node name="naples" type="Sprite" parent="."]
 position = Vector2( 341.451, 571.11 )
-texture = ExtResource( 12 )
+texture = ExtResource( 14 )
 
 [node name="Button" type="Button" parent="naples"]
-margin_left = -149.411
-margin_top = -192.558
-margin_right = -95.4113
-margin_bottom = -172.558
-text = "Naples"
+margin_left = -155.758
+margin_top = -203.665
+margin_right = -91.7577
+margin_bottom = -147.665
+icon = ExtResource( 15 )
 
 [node name="ottoman" type="Sprite" parent="."]
 position = Vector2( 545.607, 98.9745 )
-texture = ExtResource( 13 )
+texture = ExtResource( 16 )
 
 [node name="papalstates" type="Sprite" parent="."]
 position = Vector2( 53.8838, 157.574 )
-texture = ExtResource( 14 )
+texture = ExtResource( 17 )
 
 [node name="ragusa" type="Sprite" parent="."]
 position = Vector2( 567.338, 260.094 )
-texture = ExtResource( 15 )
+texture = ExtResource( 18 )
 
 [node name="saluzzo" type="Sprite" parent="."]
 position = Vector2( -511.544, -210.813 )
-texture = ExtResource( 16 )
+texture = ExtResource( 19 )
 
 [node name="sardinia" type="Sprite" parent="."]
 position = Vector2( -471.524, 521.346 )
-texture = ExtResource( 17 )
+texture = ExtResource( 20 )
 
 [node name="savoy" type="Sprite" parent="."]
 position = Vector2( -375.292, -254.975 )
-texture = ExtResource( 18 )
+texture = ExtResource( 21 )
 
 [node name="sicily" type="Sprite" parent="."]
 position = Vector2( 36.6338, 1052.46 )
-texture = ExtResource( 19 )
+texture = ExtResource( 22 )
 
 [node name="siena" type="Sprite" parent="."]
 position = Vector2( -118.834, 146.365 )
-texture = ExtResource( 20 )
+texture = ExtResource( 23 )
 
 [node name="trent" type="Sprite" parent="."]
 position = Vector2( -44.4421, -392.597 )
-texture = ExtResource( 21 )
+texture = ExtResource( 24 )
 
 [node name="venice" type="Sprite" parent="."]
 position = Vector2( 173.495, -98.7605 )
-texture = ExtResource( 22 )
+texture = ExtResource( 25 )
 
 [node name="austria" type="Sprite" parent="."]
 position = Vector2( 234.377, -300.965 )
-texture = ExtResource( 23 )
+texture = ExtResource( 26 )
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = -219.752
+margin_top = -166.145
+margin_right = 280.248
+margin_bottom = 233.855
+theme = SubResource( 4 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel"]
+margin_left = 22.23
+margin_top = 19.285
+margin_right = 242.23
+margin_bottom = 39.285
+custom_fonts/mono_font = SubResource( 5 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
+text = "Region: Region Name"
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+margin_left = 344.172
+margin_top = 13.4806
+margin_right = 444.172
+margin_bottom = 113.481
+texture = ExtResource( 3 )
+expand = true
+[connection signal="pressed" from="florence/Button" to="florence" method="_on_Button_pressed"]

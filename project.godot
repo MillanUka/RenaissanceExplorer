@@ -8,9 +8,20 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Reference",
+"class": "Nation",
+"language": "GDScript",
+"path": "res://Scripts/Nation.gd"
+}, {
+"base": "Reference",
+"class": "Ruler",
+"language": "GDScript",
+"path": "res://Scripts/Ruler.gd"
+} ]
 _global_script_class_icons={
-
+"Nation": "",
+"Ruler": ""
 }
 
 [application]
@@ -18,6 +29,10 @@ _global_script_class_icons={
 config/name="RenaissanceExplorer"
 run/main_scene="res://Scenes/Map.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+GlobalVariables="*res://Scripts/GlobalVariables.gd"
 
 [rendering]
 

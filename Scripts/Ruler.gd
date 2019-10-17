@@ -1,7 +1,7 @@
-class Ruler:
-	var name;
-	var title;
+class_name Ruler
+var name;
+var titles;
 	
-	func _init(var name):
-		self.name = name;	
+func _init(var name):
+	self.name = name;	
 		

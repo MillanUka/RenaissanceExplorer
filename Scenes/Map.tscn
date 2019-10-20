@@ -134,9 +134,9 @@ position = Vector2( 163.134, -106.999 )
 scale = Vector2( 3.99417, 1.01104 )
 rotating = true
 current = true
-limit_left = -700
+limit_left = -1400
 limit_top = -600
-limit_right = 800
+limit_right = 1600
 limit_bottom = 2000
 limit_smoothed = true
 drag_margin_h_enabled = false
@@ -193,7 +193,6 @@ margin_top = -203.604
 margin_right = 43.0174
 margin_bottom = -183.604
 custom_styles/normal = SubResource( 6 )
-text = "Genoa"
 icon = ExtResource( 10 )
 
 [node name="hungary" type="Sprite" parent="."]
@@ -222,15 +221,15 @@ position = Vector2( -395.377, -235.205 )
 texture = ExtResource( 16 )
 
 [node name="naples" type="Sprite" parent="."]
-position = Vector2( 341.451, 571.11 )
+position = Vector2( 335.619, 572.276 )
 texture = ExtResource( 17 )
 script = ExtResource( 18 )
 
 [node name="Button" type="Button" parent="naples"]
-margin_left = -155.758
-margin_top = -203.665
-margin_right = -91.7577
-margin_bottom = -147.665
+margin_left = -54.8805
+margin_top = -87.5104
+margin_right = 9.11983
+margin_bottom = -31.5104
 icon = ExtResource( 19 )
 
 [node name="ottoman" type="Sprite" parent="."]

@@ -152,7 +152,7 @@ editor_draw_limits = true
 script = ExtResource( 3 )
 
 [node name="florence" type="Sprite" parent="."]
-position = Vector2( -99.8818, 42.0081 )
+position = Vector2( -101.142, 40.1174 )
 texture = ExtResource( 4 )
 script = ExtResource( 5 )
 
@@ -176,14 +176,14 @@ texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="Button" type="Button" parent="france"]
-margin_left = -86.4706
-margin_top = -57.8201
-margin_right = -32.4706
-margin_bottom = -37.8201
+margin_left = -102.337
+margin_top = -56.2334
+margin_right = -48.3373
+margin_bottom = -36.2334
 text = "France"
 
 [node name="genoa" type="Sprite" parent="."]
-position = Vector2( -370.008, 53.3295 )
+position = Vector2( -367.037, 53.9685 )
 texture = ExtResource( 8 )
 script = ExtResource( 9 )
 
@@ -205,7 +205,7 @@ position = Vector2( -193.665, -39.3315 )
 texture = ExtResource( 12 )
 
 [node name="manuta" type="Sprite" parent="."]
-position = Vector2( -97.8232, -239.695 )
+position = Vector2( -96.6257, -237.3 )
 texture = ExtResource( 13 )
 
 [node name="milan" type="Sprite" parent="."]
@@ -213,7 +213,7 @@ position = Vector2( -251.71, -286.147 )
 texture = ExtResource( 14 )
 
 [node name="modena-ferrara" type="Sprite" parent="."]
-position = Vector2( -64.3103, -140.959 )
+position = Vector2( -67.561, -137.111 )
 texture = ExtResource( 15 )
 
 [node name="montferrat" type="Sprite" parent="."]
@@ -221,7 +221,7 @@ position = Vector2( -395.377, -235.205 )
 texture = ExtResource( 16 )
 
 [node name="naples" type="Sprite" parent="."]
-position = Vector2( 335.619, 572.276 )
+position = Vector2( 337.628, 576.334 )
 texture = ExtResource( 17 )
 script = ExtResource( 18 )
 
@@ -237,7 +237,7 @@ position = Vector2( 545.607, 98.9745 )
 texture = ExtResource( 20 )
 
 [node name="papalstates" type="Sprite" parent="."]
-position = Vector2( 53.8838, 157.574 )
+position = Vector2( 54.217, 160.383 )
 texture = ExtResource( 21 )
 
 [node name="ragusa" type="Sprite" parent="."]
@@ -253,15 +253,15 @@ position = Vector2( -471.524, 521.346 )
 texture = ExtResource( 24 )
 
 [node name="savoy" type="Sprite" parent="."]
-position = Vector2( -375.292, -254.975 )
+position = Vector2( -374.013, -249.731 )
 texture = ExtResource( 25 )
 
 [node name="sicily" type="Sprite" parent="."]
-position = Vector2( 36.6338, 1052.46 )
+position = Vector2( 47.9942, 1059.28 )
 texture = ExtResource( 26 )
 
 [node name="siena" type="Sprite" parent="."]
-position = Vector2( -118.834, 146.365 )
+position = Vector2( -116.943, 149.516 )
 texture = ExtResource( 27 )
 
 [node name="trent" type="Sprite" parent="."]

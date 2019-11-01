@@ -134,9 +134,9 @@ position = Vector2( 163.134, -106.999 )
 scale = Vector2( 3.99417, 1.01104 )
 rotating = true
 current = true
-limit_left = -1400
+limit_left = -700
 limit_top = -600
-limit_right = 1600
+limit_right = 700
 limit_bottom = 2000
 limit_smoothed = true
 drag_margin_h_enabled = false
@@ -171,16 +171,15 @@ icon = ExtResource( 2 )
 
 [node name="france" type="Sprite" parent="."]
 pause_mode = 2
-position = Vector2( -482.424, -219.042 )
+position = Vector2( -488.139, -220.758 )
 texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="Button" type="Button" parent="france"]
-margin_left = -102.337
-margin_top = -56.2334
-margin_right = -48.3373
-margin_bottom = -36.2334
-text = "France"
+margin_left = -106.0
+margin_top = -56.0
+margin_right = -55.0
+margin_bottom = -27.0
 
 [node name="genoa" type="Sprite" parent="."]
 position = Vector2( -367.037, 53.9685 )
@@ -201,7 +200,7 @@ texture = ExtResource( 11 )
 offset = Vector2( -4.80933, -254.37 )
 
 [node name="lucca" type="Sprite" parent="."]
-position = Vector2( -193.665, -39.3315 )
+position = Vector2( -189.751, -43.5755 )
 texture = ExtResource( 12 )
 
 [node name="manuta" type="Sprite" parent="."]
@@ -217,7 +216,7 @@ position = Vector2( -67.561, -137.111 )
 texture = ExtResource( 15 )
 
 [node name="montferrat" type="Sprite" parent="."]
-position = Vector2( -395.377, -235.205 )
+position = Vector2( -398.807, -234.348 )
 texture = ExtResource( 16 )
 
 [node name="naples" type="Sprite" parent="."]
@@ -253,7 +252,7 @@ position = Vector2( -471.524, 521.346 )
 texture = ExtResource( 24 )
 
 [node name="savoy" type="Sprite" parent="."]
-position = Vector2( -374.013, -249.731 )
+position = Vector2( -382.434, -259.205 )
 texture = ExtResource( 25 )
 
 [node name="sicily" type="Sprite" parent="."]

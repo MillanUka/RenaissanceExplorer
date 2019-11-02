@@ -130,7 +130,7 @@ margin_bottom = 24.76
 text = "X"
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( 163.134, -106.999 )
+position = Vector2( 21.5679, 49.4302 )
 scale = Vector2( 3.99417, 1.01104 )
 rotating = true
 current = true
@@ -182,7 +182,7 @@ margin_right = -55.0
 margin_bottom = -27.0
 
 [node name="genoa" type="Sprite" parent="."]
-position = Vector2( -367.037, 53.9685 )
+position = Vector2( -368.893, 56.4519 )
 texture = ExtResource( 8 )
 script = ExtResource( 9 )
 
@@ -220,7 +220,7 @@ position = Vector2( -398.807, -234.348 )
 texture = ExtResource( 16 )
 
 [node name="naples" type="Sprite" parent="."]
-position = Vector2( 337.628, 576.334 )
+position = Vector2( 338.816, 576.529 )
 texture = ExtResource( 17 )
 script = ExtResource( 18 )
 

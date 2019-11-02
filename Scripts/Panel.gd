@@ -27,9 +27,10 @@ func _on_Button_button_up():
 	textRect.texture = GlobalVariables.nationTexture
 	descText.text = GlobalVariables.currentlySelectNation.desc;
 	self.visible = true;
-
+	GlobalVariables.moveCamera = false;
 
 func _on_closeButton_pressed():
 	self.visible = false;
+	GlobalVariables.moveCamera = true;
 
 

@@ -2,7 +2,7 @@ extends Node
 
 var currentlySelectNation: Nation
 var nationTexture : Texture
-var moveCamera : bool
+var moveCamera = true;
 
 func _setNation(var nation):
 	currentlySelectNation = nation as Nation;

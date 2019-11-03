@@ -15,5 +15,5 @@ func _ready():
 
 
 func _on_Button_button_down():
-	GlobalVariables._setNationTexture(load("res://Resources/flags/france.png"))
+	GlobalVariables._setNationTexture(load("res://Resources/flags/france2.png"))
 	GlobalVariables._setNation(nation);

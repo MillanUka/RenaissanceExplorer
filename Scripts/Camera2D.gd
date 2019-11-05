@@ -4,7 +4,7 @@ func _input(event):
 	if GlobalVariables.moveCamera:
 		if event is InputEventMouseMotion:
 		   var mouse_position = get_viewport().get_mouse_position() 
-		   var screen_size = get_viewport();
+		   #var screen_size = get_viewport();
 		   #var x_offset = mouse_position.x/screen_size.x;
 		   #var y_offset = mouse_position.y/screen_size.y;
 		   #x_offset *= 0.5;

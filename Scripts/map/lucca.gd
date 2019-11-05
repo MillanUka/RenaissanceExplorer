@@ -7,8 +7,8 @@ var ruler;
 var nation;
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	ruler = Ruler.new("Sforza Family");
-	nation = Nation.new("Genoa", "Liguria",ruler, "John the Baptist", "in 1492. Genoa was huge player during the Italian wars. It was handed to France during the previous Italian wars. It now currently ruled by the Sforza family, who also rule the Duchy of Milan")
+	ruler = Ruler.new("Unknown");
+	nation = Nation.new("Lucca", "Tuscany",ruler, "Zita", "In 1492.")
 	
 	print(ruler.name);
 

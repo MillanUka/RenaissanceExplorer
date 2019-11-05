@@ -1,16 +1,16 @@
 [gd_scene load_steps=38 format=2]
 
 [ext_resource path="res://Scripts/Panel.gd" type="Script" id=1]
-[ext_resource path="res://Resources/flags/florence2.png" type="Texture" id=2]
-[ext_resource path="res://Scripts/Camera2D.gd" type="Script" id=3]
-[ext_resource path="res://Resources/map/france.png" type="Texture" id=4]
-[ext_resource path="res://Scripts/map/france.gd" type="Script" id=5]
-[ext_resource path="res://Resources/flags/france.png" type="Texture" id=6]
-[ext_resource path="res://Resources/map/florence.png" type="Texture" id=7]
-[ext_resource path="res://Scripts/map/florence.gd" type="Script" id=8]
+[ext_resource path="res://Scripts/Camera2D.gd" type="Script" id=2]
+[ext_resource path="res://Resources/map/france.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/map/france.gd" type="Script" id=4]
+[ext_resource path="res://Resources/flags/france.png" type="Texture" id=5]
+[ext_resource path="res://Resources/map/florence.png" type="Texture" id=6]
+[ext_resource path="res://Scripts/map/florence.gd" type="Script" id=7]
+[ext_resource path="res://Resources/flags/florence.png" type="Texture" id=8]
 [ext_resource path="res://Resources/map/genoa.png" type="Texture" id=9]
 [ext_resource path="res://Scripts/map/genoa.gd" type="Script" id=10]
-[ext_resource path="res://Resources/flags/genoa2.png" type="Texture" id=11]
+[ext_resource path="res://Resources/flags/genoa.png" type="Texture" id=11]
 [ext_resource path="res://Resources/map/hungary.png" type="Texture" id=12]
 [ext_resource path="res://Resources/map/lucca.png" type="Texture" id=13]
 [ext_resource path="res://Resources/map/manuta.png" type="Texture" id=14]
@@ -19,7 +19,7 @@
 [ext_resource path="res://Resources/map/montferrat.png" type="Texture" id=17]
 [ext_resource path="res://Resources/map/naples.png" type="Texture" id=18]
 [ext_resource path="res://Scripts/map/naples.gd" type="Script" id=19]
-[ext_resource path="res://Resources/flags/naples2.png" type="Texture" id=20]
+[ext_resource path="res://Resources/flags/naples.png" type="Texture" id=20]
 [ext_resource path="res://Resources/map/ottoman.png" type="Texture" id=21]
 [ext_resource path="res://Resources/map/papalstates.png" type="Texture" id=22]
 [ext_resource path="res://Resources/map/ragusa.png" type="Texture" id=23]
@@ -51,6 +51,7 @@ __meta__ = {
 }
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+editor/display_folded = true
 offset = Vector2( 500, 250 )
 transform = Transform2D( 1, 0, 0, 1, 500, 250 )
 
@@ -112,7 +113,6 @@ margin_left = 358.422
 margin_top = 12.5306
 margin_right = 458.422
 margin_bottom = 112.531
-texture = ExtResource( 2 )
 expand = true
 
 [node name="descText" type="RichTextLabel" parent="CanvasLayer/Panel"]
@@ -131,12 +131,14 @@ margin_bottom = 24.76
 text = "X"
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 79.9346, -17.127 )
 rotating = true
 current = true
-limit_left = -600
-limit_top = -600
-limit_right = 700
-limit_bottom = 2000
+zoom = Vector2( 0.9, 0.9 )
+limit_left = -700
+limit_top = -700
+limit_right = 800
+limit_bottom = 1400
 limit_smoothed = true
 drag_margin_h_enabled = false
 smoothing_enabled = true
@@ -144,24 +146,31 @@ smoothing_speed = 4.0
 offset_v = -1.0
 offset_h = -1.0
 editor_draw_limits = true
-script = ExtResource( 3 )
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -582.789
+margin_top = -455.439
+margin_right = 667.211
+margin_bottom = 1244.56
+color = Color( 0.121569, 0.054902, 0.721569, 1 )
 
 [node name="france" type="Sprite" parent="."]
 pause_mode = 2
 position = Vector2( -488.139, -220.758 )
-texture = ExtResource( 4 )
-script = ExtResource( 5 )
+texture = ExtResource( 3 )
+script = ExtResource( 4 )
 
 [node name="Button" type="Button" parent="france"]
 margin_left = -106.0
 margin_top = -56.0
 margin_right = -44.0
-icon = ExtResource( 6 )
+icon = ExtResource( 5 )
 
 [node name="florence" type="Sprite" parent="."]
 position = Vector2( -101.142, 40.1174 )
-texture = ExtResource( 7 )
-script = ExtResource( 8 )
+texture = ExtResource( 6 )
+script = ExtResource( 7 )
 
 [node name="Button" type="Button" parent="florence"]
 margin_left = -35.7513
@@ -174,7 +183,7 @@ custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
 custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
-icon = ExtResource( 2 )
+icon = ExtResource( 8 )
 
 [node name="genoa" type="Sprite" parent="."]
 position = Vector2( -368.893, 56.4519 )

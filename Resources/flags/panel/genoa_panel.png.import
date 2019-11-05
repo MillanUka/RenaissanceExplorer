@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/genoa2.png-5f51f0b6284f22f548c491da47eb642b.stex"
+path="res://.import/genoa_panel.png-42298831ac74e39cba5ea895c9c49d2e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/flags/genoa2.png"
-dest_files=[ "res://.import/genoa2.png-5f51f0b6284f22f548c491da47eb642b.stex" ]
+source_file="res://Resources/flags/panel/genoa_panel.png"
+dest_files=[ "res://.import/genoa_panel.png-42298831ac74e39cba5ea895c9c49d2e.stex" ]
 
 [params]
 

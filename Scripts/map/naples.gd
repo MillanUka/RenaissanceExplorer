@@ -15,5 +15,4 @@ func _ready():
 
 
 func _on_Button_button_down():
-	GlobalVariables._setNationTexture(load("res://Resources/flags/naples.png"))
 	GlobalVariables._setNation(nation);

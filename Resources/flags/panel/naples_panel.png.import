@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/florence2.png-ac217a3b6d48277d139711ec14661c57.stex"
+path="res://.import/naples_panel.png-8abd5a4f23273e51879591f5f93f6558.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/flags/florence2.png"
-dest_files=[ "res://.import/florence2.png-ac217a3b6d48277d139711ec14661c57.stex" ]
+source_file="res://Resources/flags/panel/naples_panel.png"
+dest_files=[ "res://.import/naples_panel.png-8abd5a4f23273e51879591f5f93f6558.stex" ]
 
 [params]
 

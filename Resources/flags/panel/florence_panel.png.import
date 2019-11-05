@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/milan.png-1f0b0b8fdfaa5341c477e763ab5cc283.stex"
+path="res://.import/florence_panel.png-106376378fa4b6cc13a2f7eeb9103541.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/flags/milan.png"
-dest_files=[ "res://.import/milan.png-1f0b0b8fdfaa5341c477e763ab5cc283.stex" ]
+source_file="res://Resources/flags/panel/florence_panel.png"
+dest_files=[ "res://.import/florence_panel.png-106376378fa4b6cc13a2f7eeb9103541.stex" ]
 
 [params]
 

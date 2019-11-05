@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/france2.png-cb1993599d64eae8d3be8cabc97b015e.stex"
+path="res://.import/france_panel.png-5ca78c59248577beff38379fb98c1ada.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/flags/france2.png"
-dest_files=[ "res://.import/france2.png-cb1993599d64eae8d3be8cabc97b015e.stex" ]
+source_file="res://Resources/flags/panel/france_panel.png"
+dest_files=[ "res://.import/france_panel.png-5ca78c59248577beff38379fb98c1ada.stex" ]
 
 [params]
 

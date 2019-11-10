@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=2]
+[gd_scene load_steps=51 format=2]
 
 [ext_resource path="res://Scripts/Panel.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/Camera2D.gd" type="Script" id=2]
@@ -18,23 +18,32 @@
 [ext_resource path="res://Scripts/map/lucca.gd" type="Script" id=16]
 [ext_resource path="res://Resources/flags/lucca.png" type="Texture" id=17]
 [ext_resource path="res://Resources/map/manuta.png" type="Texture" id=18]
-[ext_resource path="res://Resources/map/milan.png" type="Texture" id=19]
-[ext_resource path="res://Resources/map/modena-ferrara.png" type="Texture" id=20]
-[ext_resource path="res://Resources/map/montferrat.png" type="Texture" id=21]
-[ext_resource path="res://Resources/map/naples.png" type="Texture" id=22]
-[ext_resource path="res://Scripts/map/naples.gd" type="Script" id=23]
-[ext_resource path="res://Resources/flags/naples.png" type="Texture" id=24]
-[ext_resource path="res://Resources/map/ottoman.png" type="Texture" id=25]
-[ext_resource path="res://Resources/map/papalstates.png" type="Texture" id=26]
-[ext_resource path="res://Resources/map/ragusa.png" type="Texture" id=27]
-[ext_resource path="res://Resources/map/saluzzo.png" type="Texture" id=28]
-[ext_resource path="res://Resources/map/sardinia.png" type="Texture" id=29]
-[ext_resource path="res://Resources/map/savoy.png" type="Texture" id=30]
-[ext_resource path="res://Resources/map/sicily.png" type="Texture" id=31]
-[ext_resource path="res://Resources/map/siena.png" type="Texture" id=32]
-[ext_resource path="res://Resources/map/trent.png" type="Texture" id=33]
-[ext_resource path="res://Resources/map/venice.png" type="Texture" id=34]
-[ext_resource path="res://Resources/map/austria.png" type="Texture" id=35]
+[ext_resource path="res://Scripts/map/manuta.gd" type="Script" id=19]
+[ext_resource path="res://Resources/flags/mantua.png" type="Texture" id=20]
+[ext_resource path="res://Resources/map/milan.png" type="Texture" id=21]
+[ext_resource path="res://Scripts/map/milan.gd" type="Script" id=22]
+[ext_resource path="res://Resources/flags/milan.png" type="Texture" id=23]
+[ext_resource path="res://Resources/map/modena-ferrara.png" type="Texture" id=24]
+[ext_resource path="res://Scripts/map/modena-ferrara.gd" type="Script" id=25]
+[ext_resource path="res://Resources/flags/modena-ferrara.png" type="Texture" id=26]
+[ext_resource path="res://Resources/map/montferrat.png" type="Texture" id=27]
+[ext_resource path="res://Scripts/map/montferrat.gd" type="Script" id=28]
+[ext_resource path="res://Resources/flags/montferrat.png" type="Texture" id=29]
+[ext_resource path="res://Resources/map/naples.png" type="Texture" id=30]
+[ext_resource path="res://Scripts/map/naples.gd" type="Script" id=31]
+[ext_resource path="res://Resources/flags/naples.png" type="Texture" id=32]
+[ext_resource path="res://Resources/map/ottoman.png" type="Texture" id=33]
+[ext_resource path="res://Scripts/map/ottoman.gd" type="Script" id=34]
+[ext_resource path="res://Resources/map/papalstates.png" type="Texture" id=35]
+[ext_resource path="res://Resources/map/ragusa.png" type="Texture" id=36]
+[ext_resource path="res://Resources/map/saluzzo.png" type="Texture" id=37]
+[ext_resource path="res://Resources/map/sardinia.png" type="Texture" id=38]
+[ext_resource path="res://Resources/map/savoy.png" type="Texture" id=39]
+[ext_resource path="res://Resources/map/sicily.png" type="Texture" id=40]
+[ext_resource path="res://Resources/map/siena.png" type="Texture" id=41]
+[ext_resource path="res://Resources/map/trent.png" type="Texture" id=42]
+[ext_resource path="res://Resources/map/venice.png" type="Texture" id=43]
+[ext_resource path="res://Resources/map/austria.png" type="Texture" id=44]
 
 [sub_resource type="Theme" id=1]
 
@@ -55,7 +64,6 @@ __meta__ = {
 }
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-editor/display_folded = true
 offset = Vector2( 500, 250 )
 transform = Transform2D( 1, 0, 0, 1, 500, 250 )
 
@@ -105,7 +113,7 @@ text = "Ruler: Ruler"
 [node name="patronSaintLabel" type="RichTextLabel" parent="CanvasLayer/Panel"]
 margin_left = 20.0
 margin_top = 95.0
-margin_right = 240.0
+margin_right = 420.0
 margin_bottom = 115.0
 custom_fonts/mono_font = SubResource( 2 )
 custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
@@ -161,14 +169,15 @@ color = Color( 0.121569, 0.054902, 0.721569, 1 )
 
 [node name="france" type="Sprite" parent="."]
 pause_mode = 2
-position = Vector2( -488.139, -220.758 )
+position = Vector2( -490.3, -223.46 )
 texture = ExtResource( 3 )
 script = ExtResource( 4 )
 
 [node name="Button" type="Button" parent="france"]
-margin_left = -106.0
-margin_top = -56.0
-margin_right = -44.0
+margin_left = -120.702
+margin_top = -79.9872
+margin_right = -58.7018
+margin_bottom = -23.9872
 icon = ExtResource( 5 )
 
 [node name="florence" type="Sprite" parent="."]
@@ -232,74 +241,117 @@ icon = ExtResource( 17 )
 [node name="manuta" type="Sprite" parent="."]
 position = Vector2( -96.6257, -237.3 )
 texture = ExtResource( 18 )
+script = ExtResource( 19 )
+
+[node name="Button" type="Button" parent="manuta"]
+margin_left = -47.5645
+margin_top = -7.83347
+margin_right = 6.43549
+margin_bottom = 42.1665
+custom_styles/normal = SubResource( 6 )
+icon = ExtResource( 20 )
 
 [node name="milan" type="Sprite" parent="."]
 position = Vector2( -251.71, -286.147 )
-texture = ExtResource( 19 )
+texture = ExtResource( 21 )
+script = ExtResource( 22 )
+
+[node name="Button" type="Button" parent="milan"]
+margin_left = -31.3812
+margin_top = 62.4931
+margin_right = 22.6188
+margin_bottom = 112.493
+custom_styles/normal = SubResource( 6 )
+icon = ExtResource( 23 )
 
 [node name="modena-ferrara" type="Sprite" parent="."]
 position = Vector2( -67.561, -137.111 )
-texture = ExtResource( 20 )
+texture = ExtResource( 24 )
+script = ExtResource( 25 )
+
+[node name="Button" type="Button" parent="modena-ferrara"]
+margin_left = 33.4178
+margin_top = -37.5695
+margin_right = 87.4178
+margin_bottom = 12.4305
+custom_styles/normal = SubResource( 6 )
+icon = ExtResource( 26 )
 
 [node name="montferrat" type="Sprite" parent="."]
 position = Vector2( -398.807, -234.348 )
-texture = ExtResource( 21 )
+texture = ExtResource( 27 )
+script = ExtResource( 28 )
+
+[node name="Button" type="Button" parent="montferrat"]
+margin_left = -28.766
+margin_top = 7.97334
+margin_right = 25.234
+margin_bottom = 57.9733
+custom_styles/normal = SubResource( 6 )
+icon = ExtResource( 29 )
 
 [node name="naples" type="Sprite" parent="."]
 position = Vector2( 338.816, 576.529 )
-texture = ExtResource( 22 )
-script = ExtResource( 23 )
+texture = ExtResource( 30 )
+script = ExtResource( 31 )
 
 [node name="Button" type="Button" parent="naples"]
 margin_left = -54.8805
 margin_top = -87.5104
 margin_right = 9.11983
 margin_bottom = -31.5104
-icon = ExtResource( 24 )
+icon = ExtResource( 32 )
 
 [node name="ottoman" type="Sprite" parent="."]
 position = Vector2( 545.607, 98.9745 )
-texture = ExtResource( 25 )
+texture = ExtResource( 33 )
+script = ExtResource( 34 )
+
+[node name="Button" type="Button" parent="ottoman"]
+margin_left = -54.5835
+margin_top = -89.0399
+margin_right = 9.41687
+margin_bottom = -33.0399
 
 [node name="papalstates" type="Sprite" parent="."]
 position = Vector2( 54.217, 160.383 )
-texture = ExtResource( 26 )
+texture = ExtResource( 35 )
 
 [node name="ragusa" type="Sprite" parent="."]
 position = Vector2( 567.338, 260.094 )
-texture = ExtResource( 27 )
+texture = ExtResource( 36 )
 
 [node name="saluzzo" type="Sprite" parent="."]
-position = Vector2( -511.544, -210.813 )
-texture = ExtResource( 28 )
+position = Vector2( -516.948, -218.781 )
+texture = ExtResource( 37 )
 
 [node name="sardinia" type="Sprite" parent="."]
 position = Vector2( -471.524, 521.346 )
-texture = ExtResource( 29 )
+texture = ExtResource( 38 )
 
 [node name="savoy" type="Sprite" parent="."]
 position = Vector2( -382.434, -259.205 )
-texture = ExtResource( 30 )
+texture = ExtResource( 39 )
 
 [node name="sicily" type="Sprite" parent="."]
 position = Vector2( 47.9942, 1059.28 )
-texture = ExtResource( 31 )
+texture = ExtResource( 40 )
 
 [node name="siena" type="Sprite" parent="."]
 position = Vector2( -116.943, 149.516 )
-texture = ExtResource( 32 )
+texture = ExtResource( 41 )
 
 [node name="trent" type="Sprite" parent="."]
 position = Vector2( -44.4421, -392.597 )
-texture = ExtResource( 33 )
+texture = ExtResource( 42 )
 
 [node name="venice" type="Sprite" parent="."]
 position = Vector2( 173.495, -99.7105 )
-texture = ExtResource( 34 )
+texture = ExtResource( 43 )
 
 [node name="austria" type="Sprite" parent="."]
 position = Vector2( 234.377, -300.965 )
-texture = ExtResource( 35 )
+texture = ExtResource( 44 )
 [connection signal="pressed" from="CanvasLayer/Panel/closeButton" to="CanvasLayer/Panel" method="_on_closeButton_pressed"]
 [connection signal="button_down" from="france/Button" to="france" method="_on_Button_button_down"]
 [connection signal="button_up" from="france/Button" to="CanvasLayer/Panel" method="_on_Button_button_up"]
@@ -311,5 +363,15 @@ texture = ExtResource( 35 )
 [connection signal="button_up" from="hungary/Button" to="CanvasLayer/Panel" method="_on_Button_button_up"]
 [connection signal="button_down" from="lucca/Button" to="lucca" method="_on_Button_button_down"]
 [connection signal="button_up" from="lucca/Button" to="CanvasLayer/Panel" method="_on_Button_button_up"]
+[connection signal="button_down" from="manuta/Button" to="manuta" method="_on_Button_button_down"]
+[connection signal="button_up" from="manuta/Button" to="CanvasLayer/Panel" method="_on_Button_button_up"]
+[connection signal="button_down" from="milan/Button" to="milan" method="_on_Button_button_down"]
+[connection signal="button_up" from="milan/Button" to="CanvasLayer/Panel" method="_on_Button_button_up"]
+[connection signal="button_down" from="modena-ferrara/Button" to="modena-ferrara" method="_on_Button_button_down"]
+[connection signal="button_up" from="modena-ferrara/Button" to="CanvasLayer/Panel" method="_on_Button_button_up"]
+[connection signal="button_down" from="montferrat/Button" to="montferrat" method="_on_Button_button_down"]
+[connection signal="button_up" from="montferrat/Button" to="CanvasLayer/Panel" method="_on_Button_button_up"]
 [connection signal="button_down" from="naples/Button" to="naples" method="_on_Button_button_down"]
 [connection signal="button_up" from="naples/Button" to="CanvasLayer/Panel" method="_on_Button_button_up"]
+[connection signal="button_down" from="ottoman/Button" to="ottoman" method="_on_Button_button_down"]
+[connection signal="button_up" from="ottoman/Button" to="CanvasLayer/Panel" method="_on_Button_button_up"]

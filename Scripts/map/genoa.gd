@@ -9,9 +9,6 @@ var nation;
 func _ready():
 	ruler = Ruler.new("Sforza Family");
 	nation = Nation.new("Genoa", "Liguria",ruler, "John the Baptist", "in 1492. Genoa was huge player during the Italian wars. It was handed to France during the previous Italian wars. It now currently ruled by the Sforza family, who also rule the Duchy of Milan")
-	
-	print(ruler.name);
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

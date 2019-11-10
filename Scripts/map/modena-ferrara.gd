@@ -7,8 +7,9 @@ var ruler;
 var nation;
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	ruler = Ruler.new("Unknown");
-	nation = Nation.new("Lucca", "Tuscany",ruler, "Zita", "In 1492.")
+	ruler = Ruler.new("Ercole I");
+	nation = Nation.new("Modena-Ferrara", "	Emilia-Romagna",ruler, "George", "In 1492.")
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

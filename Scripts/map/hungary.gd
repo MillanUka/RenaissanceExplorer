@@ -9,8 +9,6 @@ var nation;
 func _ready():
 	ruler = Ruler.new("Vladislaus II");
 	nation = Nation.new("Hungary", "Hungary",ruler, "Stephen I", "In 1492.")
-	
-	print(ruler.name);
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
